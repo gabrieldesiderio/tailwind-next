@@ -23,6 +23,7 @@ export function ImagePreview() {
     )
   } else {
     return (
+      // eslint-disable-next-line @next/next/no-img-element
       <img
         src={previewURL}
         className="h-16 w-16 rounded-full object-cover"
