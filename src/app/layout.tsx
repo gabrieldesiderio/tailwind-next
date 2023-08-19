@@ -6,7 +6,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Tailwind UI',
+  title: 'Tailwind ADMIN',
   description: 'A dashboard UI created with Tailwind CSS and NextJS',
 }
 

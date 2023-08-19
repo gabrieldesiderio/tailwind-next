@@ -203,7 +203,7 @@ export function Logo() {
           </clipPath>
         </defs>
       </svg>
-      <span>Tailwind UI</span>
+      <span>Tailwind ADMIN</span>
     </strong>
   )
 }
