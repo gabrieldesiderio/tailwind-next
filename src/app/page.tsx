@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         <form
           id="settings"
-          className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200 dark:divide-zinc-400"
+          className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200 dark:divide-zinc-700"
         >
           <div className="flex flex-col gap-3 lg:grid lg:grid-cols-form">
             <label
