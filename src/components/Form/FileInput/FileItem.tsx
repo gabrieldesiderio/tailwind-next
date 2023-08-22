@@ -7,7 +7,7 @@ const fileItem = tv({
   slots: {
     container:
       'group flex items-start gap-4 rounded-lg border border-zinc-200 p-4',
-    icon: 'rounded-full border-4 border-violet-400 bg-violet-200 p-2 text-violet-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-500',
+    icon: 'rounded-full border-4 border-primary-400 bg-primary-200 p-2 text-primary-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-500',
     deleteButton: '',
   },
   variants: {
@@ -16,7 +16,7 @@ const fileItem = tv({
         container: 'dark:border-zinc-700',
       },
       complete: {
-        container: 'border-violet-500 dark:border-violet-300/30',
+        container: 'border-primary-500 dark:border-primary-300/30',
       },
       error: {
         container:
@@ -78,7 +78,7 @@ export function FileItem({ name, size, state }: FileItemProps) {
           <div className="flex w-full items-center gap-3">
             <div className="h-2 flex-1 rounded-full bg-zinc-100 dark:bg-zinc-600">
               <div
-                className="h-2 w-4/5 rounded-full bg-violet-600 dark:bg-violet-300"
+                className="h-2 w-4/5 rounded-full bg-primary-600 dark:bg-primary-300"
                 style={{ width: state === 'complete' ? '100%' : '80%' }}
               />
             </div>
@@ -90,7 +90,7 @@ export function FileItem({ name, size, state }: FileItemProps) {
       )}
 
       {state === 'complete' ? (
-        <CheckCircle2 className="h-5 w-5 fill-violet-600 text-white" />
+        <CheckCircle2 className="h-5 w-5 fill-primary-600 text-white" />
       ) : (
         <Button type="button" variant="ghost" className={deleteButton()}>
           <Trash2 className="h-5 w-5" />
